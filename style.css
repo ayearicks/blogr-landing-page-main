@@ -1,0 +1,29 @@
+:root {
+  --LightRed: hsl(356, 100%, 66%);
+  --VeryLightRed: hsl(355, 100%, 74%);
+  --VeryDarkBlue: hsl(208, 49%, 24%);
+  --White: hsl(0, 0%, 100%);
+  --GrayBlue: hsl(240, 2%, 79%);
+  --DarkGrayBlue: hsl(207, 13%, 34%);
+  --DarkBlackBlue: hsl(240, 10%, 16%);
+  --Overpass: 'Overpass', sans-serif;
+  --Ubuntu: 'Ubuntu', sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+nav .hamburger {
+  color: var(--White);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
