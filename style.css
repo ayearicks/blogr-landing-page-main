@@ -1,29 +1,254 @@
-:root {
-  --LightRed: hsl(356, 100%, 66%);
-  --VeryLightRed: hsl(355, 100%, 74%);
-  --VeryDarkBlue: hsl(208, 49%, 24%);
-  --White: hsl(0, 0%, 100%);
-  --GrayBlue: hsl(240, 2%, 79%);
-  --DarkGrayBlue: hsl(207, 13%, 34%);
-  --DarkBlackBlue: hsl(240, 10%, 16%);
-  --Overpass: 'Overpass', sans-serif;
-  --Ubuntu: 'Ubuntu', sans-serif;
-}
-
 body {
   font-size: 16px;
+  overflow-x: hidden;
 }
 
-nav .hamburger {
-  color: var(--White);
+/*
+  _   _             _             _   _             
+ | \ | |           (_)           | | (_)            
+ |  \| | __ ___   ___  __ _  __ _| |_ _  ___  _ __  
+ | . ` |/ _` \ \ / / |/ _` |/ _` | __| |/ _ \| '_ \ 
+ | |\  | (_| |\ V /| | (_| | (_| | |_| | (_) | | | |
+ |_| \_|\__,_| \_/ |_|\__, |\__,_|\__|_|\___/|_| |_|
+                       __/ |                        
+                      |___/                        
+*/
+#nav {
+  background: url("images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff3d54), to(#ff8f70));
+  background: url("images/bg-pattern-intro.svg"), linear-gradient(to right, #ff3d54, #ff8f70);
+  background-repeat: no-repeat;
+  background-size: 175%;
+  background-position: -450px;
+  min-height: 70vh;
+  border-bottom-left-radius: 100px;
+}
+
+.navbar {
+  padding: 2.5rem 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+  border-color: white;
+}
+
+#navigation {
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.dropdown-toggle {
+  color: white;
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+.dropdown-toggle:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.dropdown-item:hover {
+  background: none;
+  font-weight: 500;
+}
+
+#login-signup .nav-link {
+  text-decoration: none;
+  color: white;
+  padding-inline: 2rem;
+  font-weight: 500;
+}
+
+#login-signup .signup .nav-link {
+  color: #ff525d;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#login-signup .signup:hover .nav-link {
+  background-color: #ff7a85;
+  color: white;
+}
+
+/*
+ _    _                
+ | |  | |               
+ | |__| | ___ _ __ ___  
+ |  __  |/ _ \ '__/  _ \ 
+ | |  | |  __/ | | /(_) |
+ |_|  |_|\___|_|  \__ __/ 
+                     
+ */
+#hero {
+  margin-top: 8rem;
+  color: white;
+  font-family: "Overpass", sans-serif;
+}
+
+#hero h2 {
+  font-size: 24px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+#hero .btn {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+#hero .btn-light {
+  color: #ff525d;
+}
+
+#hero .cta-free:hover {
+  background-color: #ff7a85;
+  color: white;
+  border: none;
+}
+
+#hero .cta-learn:hover {
+  background-color: white;
+  color: #ff525d;
+}
+
+/*
+   __       _                  
+  / _|     | |                 
+ | |_ _   _| |_ _   _ _ __ ___ 
+ |  _| | | | __| | | | '__/ _ \
+ | | | |_| | |_| |_| | | |  __/
+ |_|  \__,_|\__|\__,_|_|  \___|
+                              
+ */
+#future row {
+  padding: 5rem;
+}
+
+#future h3, h4 {
+  font-weight: 600;
+  color: #1f3f5b;
+  font-family: "Overpass", sans-serif;
+}
+
+#future .feature {
+  margin: 5rem 0 10rem 2rem;
+}
+
+#future #future-img {
+  margin: 0 auto;
+  width: 125%;
+}
+
+#future .feature-text {
+  width: 80%;
+  margin-left: 5rem;
+}
+
+#future p {
+  color: #4b5862;
+  font-family: "Ubuntu", sans-serif;
+  opacity: .8;
+}
+
+/*    _____ _        _                __                 _   
+  / ____| |      | |              / _|     /\        | |  
+ | /(___ | |_ __ _| |_ ___    ___ | |_     /  \   _ __| |_ 
+  \___ \| __/ _` | __/ _ \  / _ \|  _|   / /\ \ | '__| __|
+  ____) | || (_| | ||  __/ | (_) | |    / ____ \| |  | |_ 
+ |_____/ \__\__,_|\__\___|  \___/|_|   /_/    \_\_|   \__|
+ */
+#art-state {
+  background: -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4164));
+  background: linear-gradient(to right, #2c2d3f, #3f4164);
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  height: 25rem;
+}
+
+#art-state .phone-img {
+  margin-top: -5rem;
+}
+
+#art-state .art-text {
+  color: white;
+  padding: 5rem;
+}
+
+#art-state .art-text h4 {
+  color: white;
+  font-size: 36px;
+  font-family: "Overpass", sans-serif;
+}
+
+#art-state .art-text p {
+  font-family: "Ubuntu", sans-serif;
+  opacity: .8;
+}
+
+/*
+   _____ _                 _      
+  / ____(_)               | |     
+ | (___  _ _ __ ___  _ __ | | ___ 
+  \___ \| | '_ ` _ \| '_ \| |/ _ \
+  ____) | | | | | | | |_) | |  __/
+ |_____/|_|_| |_| |_| .__/|_|\___|
+                    | |           
+                    |_|          
+*/
+#simple {
+  margin-top: 10rem;
+}
+
+#simple img {
+  width: 175%;
+  margin-left: -30rem;
+}
+
+/*______          _            
+|  ____|        | |           
+| |__ ___   ___ | |_ ___ _ __ 
+|  __/ _ \ / _ \| __/ _ \ '__|
+| | | (_) | (_) | ||  __/ |   
+|_|  \___/ \___/ \__\___|_|  
+*/
+footer {
+  background-color: #25252d;
+}
+
+footer img {
+  margin-top: -10rem;
+}
+
+footer p {
+  color: white;
+  font-weight: 500;
+}
+
+footer .nav-link {
+  color: white;
+}
+
+footer .nav-link:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 .attribution {
+  background-color: #25252d;
   font-size: 11px;
+  color: #ff7a85;
   text-align: center;
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
