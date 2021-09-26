@@ -32,9 +32,9 @@ body {
   border: none;
 }
 
-.navbar-toggler:focus, .navbar-toggler:active {
-  border-color: white;
-  outline: none;
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #navigation {
@@ -44,16 +44,41 @@ body {
 }
 
 .dropdown-toggle {
-  color: white;
-  font-size: 18px;
+  color: #1f3f5b;
+  font-size: 20px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   padding: 1rem 0;
 }
 
+.dropdown-toggle::after {
+  display: none;
+}
+
 .dropdown-toggle:hover {
-  color: white;
+  color: #1f3f5b;
   text-decoration: underline;
+}
+
+.dropdown-toggle.show {
+  color: #1f3f5b;
+}
+
+.dropdown-menu {
+  background-color: #c8c8cb;
+  opacity: .6;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.dropdown-item {
+  padding: .8rem 0;
+  color: #1f3f5b;
+  font-family: "Overpass", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .dropdown-item:hover {
@@ -63,300 +88,70 @@ body {
 
 #login-signup .nav-link {
   text-decoration: none;
-  color: white;
+  color: #1f3f5b;
   padding-inline: 2rem;
   font-weight: 500;
 }
 
 #login-signup .signup .nav-link {
-  color: #ff525d;
-  background-color: white;
-  border-radius: 30px;
-}
-
-#login-signup .signup:hover .nav-link {
-  background-color: #ff7a85;
   color: white;
+  background: -webkit-gradient(linear, right top, left top, from(#ff3d54), to(#ff8f70));
+  background: linear-gradient(to left, #ff3d54, #ff8f70);
+  border-radius: 30px;
+  width: 50%;
+  margin: 1rem auto;
 }
 
 @media (min-width: 576px) {
   #nav {
-    background: url("images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff3d54), to(#ff8f70));
-    background: url("images/bg-pattern-intro.svg"), linear-gradient(to right, #ff3d54, #ff8f70);
-    background-repeat: no-repeat;
-    background-size: 175%;
+    background-size: 350%;
     background-position: -450px;
-    min-height: 70vh;
-    border-bottom-left-radius: 100px;
-  }
-  .navbar {
-    padding: 2.5rem 1.5rem;
-    font-family: "Ubuntu", sans-serif;
-  }
-  .navbar-toggler {
-    border: none;
-  }
-  .navbar-toggler:focus, .navbar-toggler:active {
-    border-color: white;
-  }
-  #navigation {
-    background-color: white;
-    border-radius: 5px;
-    text-align: center;
-  }
-  .dropdown-toggle {
-    color: white;
-    font-size: 18px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    padding: 1rem 0;
-  }
-  .dropdown-toggle:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  .dropdown-item:hover {
-    background: none;
-    font-weight: 500;
-  }
-  #login-signup .nav-link {
-    text-decoration: none;
-    color: white;
-    padding-inline: 2rem;
-    font-weight: 500;
-  }
-  #login-signup .signup .nav-link {
-    color: #ff525d;
-    background-color: white;
-    border-radius: 30px;
-  }
-  #login-signup .signup:hover .nav-link {
-    background-color: #ff7a85;
-    color: white;
   }
 }
 
 @media (min-width: 768px) {
   #nav {
-    background: url("images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff3d54), to(#ff8f70));
-    background: url("images/bg-pattern-intro.svg"), linear-gradient(to right, #ff3d54, #ff8f70);
-    background-repeat: no-repeat;
     background-size: 175%;
-    background-position: -450px;
-    min-height: 70vh;
-    border-bottom-left-radius: 100px;
-  }
-  .navbar {
-    padding: 2.5rem 1.5rem;
-    font-family: "Ubuntu", sans-serif;
-  }
-  .navbar-toggler {
-    border: none;
-  }
-  .navbar-toggler:focus, .navbar-toggler:active {
-    border-color: white;
-  }
-  #navigation {
-    background-color: white;
-    border-radius: 5px;
-    text-align: center;
-  }
-  .dropdown-toggle {
-    color: white;
-    font-size: 18px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    padding: 1rem 0;
-  }
-  .dropdown-toggle:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  .dropdown-item:hover {
-    background: none;
-    font-weight: 500;
-  }
-  #login-signup .nav-link {
-    text-decoration: none;
-    color: white;
-    padding-inline: 2rem;
-    font-weight: 500;
-  }
-  #login-signup .signup .nav-link {
-    color: #ff525d;
-    background-color: white;
-    border-radius: 30px;
-  }
-  #login-signup .signup:hover .nav-link {
-    background-color: #ff7a85;
-    color: white;
+    background-position: -150px;
   }
 }
 
 @media (min-width: 992px) {
   #nav {
-    background: url("images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff3d54), to(#ff8f70));
-    background: url("images/bg-pattern-intro.svg"), linear-gradient(to right, #ff3d54, #ff8f70);
-    background-repeat: no-repeat;
-    background-size: 175%;
+    background-size: 250%;
     background-position: -450px;
-    min-height: 70vh;
-    border-bottom-left-radius: 100px;
-  }
-  .navbar {
-    padding: 2.5rem 1.5rem;
-    font-family: "Ubuntu", sans-serif;
-  }
-  .navbar-toggler {
-    border: none;
-  }
-  .navbar-toggler:focus, .navbar-toggler:active {
-    border-color: white;
   }
   #navigation {
-    background-color: white;
-    border-radius: 5px;
-    text-align: center;
+    background-color: transparent;
   }
   .dropdown-toggle {
-    color: white;
     font-size: 18px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    padding: 1rem 0;
+    color: white;
   }
   .dropdown-toggle:hover {
     color: white;
-    text-decoration: underline;
+  }
+  .dropdown-toggle img {
+    display: none;
+  }
+  .dropdown-toggle::after {
+    display: inline-block;
+  }
+  .dropdown-menu {
+    background-color: white;
   }
   .dropdown-item:hover {
     background: none;
     font-weight: 500;
   }
   #login-signup .nav-link {
-    text-decoration: none;
     color: white;
-    padding-inline: 2rem;
-    font-weight: 500;
   }
   #login-signup .signup .nav-link {
     color: #ff525d;
+    background: unset;
     background-color: white;
-    border-radius: 30px;
-  }
-  #login-signup .signup:hover .nav-link {
-    background-color: #ff7a85;
-    color: white;
-  }
-}
-
-@media (min-width: 1200px) {
-  #nav {
-    background: url("images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff3d54), to(#ff8f70));
-    background: url("images/bg-pattern-intro.svg"), linear-gradient(to right, #ff3d54, #ff8f70);
-    background-repeat: no-repeat;
-    background-size: 175%;
-    background-position: -450px;
-    min-height: 70vh;
-    border-bottom-left-radius: 100px;
-  }
-  .navbar {
-    padding: 2.5rem 1.5rem;
-    font-family: "Ubuntu", sans-serif;
-  }
-  .navbar-toggler {
-    border: none;
-  }
-  .navbar-toggler:focus, .navbar-toggler:active {
-    border-color: white;
-  }
-  #navigation {
-    background-color: white;
-    border-radius: 5px;
-    text-align: center;
-  }
-  .dropdown-toggle {
-    color: white;
-    font-size: 18px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    padding: 1rem 0;
-  }
-  .dropdown-toggle:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  .dropdown-item:hover {
-    background: none;
-    font-weight: 500;
-  }
-  #login-signup .nav-link {
-    text-decoration: none;
-    color: white;
-    padding-inline: 2rem;
-    font-weight: 500;
-  }
-  #login-signup .signup .nav-link {
-    color: #ff525d;
-    background-color: white;
-    border-radius: 30px;
-  }
-  #login-signup .signup:hover .nav-link {
-    background-color: #ff7a85;
-    color: white;
-  }
-}
-
-@media (min-width: 1400px) {
-  #nav {
-    background: url("images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff3d54), to(#ff8f70));
-    background: url("images/bg-pattern-intro.svg"), linear-gradient(to right, #ff3d54, #ff8f70);
-    background-repeat: no-repeat;
-    background-size: 175%;
-    background-position: -450px;
-    min-height: 70vh;
-    border-bottom-left-radius: 100px;
-  }
-  .navbar {
-    padding: 2.5rem 1.5rem;
-    font-family: "Ubuntu", sans-serif;
-  }
-  .navbar-toggler {
-    border: none;
-  }
-  .navbar-toggler:focus, .navbar-toggler:active {
-    border-color: white;
-  }
-  #navigation {
-    background-color: white;
-    border-radius: 5px;
-    text-align: center;
-  }
-  .dropdown-toggle {
-    color: white;
-    font-size: 18px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    padding: 1rem 0;
-  }
-  .dropdown-toggle:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  .dropdown-item:hover {
-    background: none;
-    font-weight: 500;
-  }
-  #login-signup .nav-link {
-    text-decoration: none;
-    color: white;
-    padding-inline: 2rem;
-    font-weight: 500;
-  }
-  #login-signup .signup .nav-link {
-    color: #ff525d;
-    background-color: white;
-    border-radius: 30px;
+    width: 100%;
   }
   #login-signup .signup:hover .nav-link {
     background-color: #ff7a85;
@@ -405,6 +200,10 @@ body {
   color: #ff525d;
 }
 
+#hero .cta-learn, #hero .cta-free {
+  margin-bottom: 5rem;
+}
+
 /*
    __       _                  
   / _|     | |                 
@@ -412,7 +211,6 @@ body {
  |  _| | | | __| | | | '__/ _ \
  | | | |_| | |_| |_| | | |  __/
  |_|  \__,_|\__|\__,_|_|  \___|
-                              
  */
 #future row {
   padding: 5rem;
@@ -425,17 +223,17 @@ body {
 }
 
 #future .feature {
-  margin: 5rem 0 10rem 2rem;
+  margin-top: 3rem;
 }
 
 #future #future-img {
-  margin: 0 auto;
-  width: 125%;
+  width: 100%;
 }
 
 #future .feature-text {
   width: 80%;
-  margin-left: 5rem;
+  text-align: center;
+  margin: 2rem auto;
 }
 
 #future p {
@@ -444,28 +242,53 @@ body {
   opacity: .8;
 }
 
+@media (min-width: 992px) {
+  #future .feature-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1400px) {
+  #future .feature {
+    margin: 5rem 0 10rem 2rem;
+  }
+  #future #future-img {
+    margin: 0 auto;
+    width: 125%;
+  }
+  #future .feature-text {
+    width: 80%;
+    margin-left: 5rem;
+  }
+}
+
 /*    _____ _        _                __                 _   
   / ____| |      | |              / _|     /\        | |  
  | /(___ | |_ __ _| |_ ___    ___ | |_     /  \   _ __| |_ 
   \___ \| __/ _` | __/ _ \  / _ \|  _|   / /\ \ | '__| __|
   ____) | || (_| | ||  __/ | (_) | |    / ____ \| |  | |_ 
  |_____/ \__\__,_|\__\___|  \___/|_|   /_/    \_\_|   \__|
+
+ 
  */
 #art-state {
   background: -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4164));
   background: linear-gradient(to right, #2c2d3f, #3f4164);
   border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;
-  height: 25rem;
+  height: 35rem;
+  margin-top: 5rem;
 }
 
 #art-state .phone-img {
+  width: 100%;
   margin-top: -5rem;
 }
 
 #art-state .art-text {
   color: white;
-  padding: 5rem;
+  text-align: center;
+  width: 100%;
 }
 
 #art-state .art-text h4 {
@@ -477,6 +300,49 @@ body {
 #art-state .art-text p {
   font-family: "Ubuntu", sans-serif;
   opacity: .8;
+}
+
+@media (min-width: 576px) {
+  #art-state {
+    height: 40rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #art-state {
+    margin-top: 5rem;
+    height: 30rem;
+  }
+  #art-state .phone-img-container {
+    text-align: center;
+  }
+  #art-state .phone-img {
+    width: 50%;
+    margin-top: -5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #art-state {
+    height: 20rem;
+    margin-top: 5rem;
+  }
+  #art-state .phone-img {
+    width: 110%;
+    margin: -5rem auto;
+  }
+  #art-state .art-text {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #art-state {
+    height: 25rem;
+  }
 }
 
 /*
@@ -494,8 +360,23 @@ body {
 }
 
 #simple img {
-  width: 175%;
-  margin-left: -30rem;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  #simple .simple-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1400px) {
+  #simple {
+    margin-top: 10rem;
+  }
+  #simple img {
+    width: 175%;
+    margin-left: -30rem;
+  }
 }
 
 /*______          _            
@@ -507,10 +388,11 @@ body {
 */
 footer {
   background-color: #25252d;
+  border-top-right-radius: 100px;
 }
 
 footer img {
-  margin-top: -10rem;
+  padding-top: 15rem;
 }
 
 footer p {
@@ -525,6 +407,12 @@ footer .nav-link {
 footer .nav-link:hover {
   text-decoration: underline;
   color: white;
+}
+
+@media (min-width: 992px) {
+  footer img {
+    padding-top: 0;
+  }
 }
 
 .attribution {
