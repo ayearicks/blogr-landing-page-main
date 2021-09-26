@@ -50,9 +50,8 @@ body {
     border: none;
 }
 
-.navbar-toggler:focus, .navbar-toggler:active {
-    border-color: white;
-    outline: none;
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 #navigation {
@@ -62,16 +61,41 @@ body {
 }
 
 .dropdown-toggle {
-    color: white;
-    font-size: 18px;
+    color: $VeryDarkBlue;
+    font-size: 20px;
     font-family: $Ubuntu;
     font-weight: 500;
     padding: 1rem 0;
 }
 
+.dropdown-toggle::after {
+    display: none;
+}
+
 .dropdown-toggle:hover {
     color: white;
     text-decoration: underline;
+}
+
+.dropdown-toggle.show {
+    color: $VeryDarkBlue;
+}
+
+.dropdown-menu {
+    background-color:$GrayBlue;
+    opacity: .6;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.dropdown-item {
+    padding: .8rem 0;
+    color: $VeryDarkBlue;
+    font-family: $Overpass;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .dropdown-item:hover {
@@ -81,196 +105,62 @@ body {
 
 #login-signup .nav-link {
     text-decoration: none;
-    color: white;
+    color: $VeryDarkBlue;
     padding-inline: 2rem;
     font-weight: 500;
 }
 
 #login-signup .signup .nav-link {
-    color: $LightRed;
-    background-color:white;
+    color: white;
+    background: linear-gradient(to left, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
     border-radius: 30px;
+    width: 50%;
+    margin: 1rem auto;
 }
 
-#login-signup .signup:hover .nav-link{
-    background-color: $VeryLightRed;
-    color: white;
-}
+
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
     #nav {
-        background: url('images/bg-pattern-intro.svg'), linear-gradient(to right, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
-        background-repeat: no-repeat;
-        background-size: 175%;
+        background-size: 350%;
         background-position: -450px;
-        min-height: 70vh;
-        border-bottom-left-radius: 100px;
-    }
-
-    .navbar {
-        padding: 2.5rem 1.5rem;
-        font-family: $Ubuntu;
-    }
-
-    .navbar-toggler {
-        border: none;
-    }
-
-    .navbar-toggler:focus, .navbar-toggler:active {
-        border-color: white;
-    }
-
-    #navigation {
-        background-color: white;
-        border-radius: 5px;
-        text-align: center;
-    }
-
-    .dropdown-toggle {
-        color: white;
-        font-size: 18px;
-        font-family: $Ubuntu;
-        font-weight: 500;
-        padding: 1rem 0;
-    }
-
-    .dropdown-toggle:hover {
-        color: white;
-        text-decoration: underline;
-    }
-
-    .dropdown-item:hover {
-        background: none;
-        font-weight: 500;
-    }
-
-    #login-signup .nav-link {
-        text-decoration: none;
-        color: white;
-        padding-inline: 2rem;
-        font-weight: 500;
-    }
-
-    #login-signup .signup .nav-link {
-        color: $LightRed;
-        background-color:white;
-        border-radius: 30px;
-    }
-
-    #login-signup .signup:hover .nav-link{
-        background-color: $VeryLightRed;
-        color: white;
-    }
+    } 
   }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
     #nav {
-        background: url('images/bg-pattern-intro.svg'), linear-gradient(to right, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
-        background-repeat: no-repeat;
         background-size: 175%;
-        background-position: -450px;
-        min-height: 70vh;
-        border-bottom-left-radius: 100px;
+        background-position: -150px;
+  
     }
 
-    .navbar {
-        padding: 2.5rem 1.5rem;
-        font-family: $Ubuntu;
-    }
-
-    .navbar-toggler {
-        border: none;
-    }
-
-    .navbar-toggler:focus, .navbar-toggler:active {
-        border-color: white;
-    }
-
-    #navigation {
-        background-color: white;
-        border-radius: 5px;
-        text-align: center;
-    }
-
-    .dropdown-toggle {
-        color: white;
-        font-size: 18px;
-        font-family: $Ubuntu;
-        font-weight: 500;
-        padding: 1rem 0;
-    }
-
-    .dropdown-toggle:hover {
-        color: white;
-        text-decoration: underline;
-    }
-
-    .dropdown-item:hover {
-        background: none;
-        font-weight: 500;
-    }
-
-    #login-signup .nav-link {
-        text-decoration: none;
-        color: white;
-        padding-inline: 2rem;
-        font-weight: 500;
-    }
-
-    #login-signup .signup .nav-link {
-        color: $LightRed;
-        background-color:white;
-        border-radius: 30px;
-    }
-
-    #login-signup .signup:hover .nav-link{
-        background-color: $VeryLightRed;
-        color: white;
-    }
  }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
     #nav {
-        background: url('images/bg-pattern-intro.svg'), linear-gradient(to right, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
-        background-repeat: no-repeat;
-        background-size: 175%;
+        background-size: 250%;
         background-position: -450px;
-        min-height: 70vh;
-        border-bottom-left-radius: 100px;
     }
 
-    .navbar {
-        padding: 2.5rem 1.5rem;
-        font-family: $Ubuntu;
-    }
-
-    .navbar-toggler {
-        border: none;
-    }
-
-    .navbar-toggler:focus, .navbar-toggler:active {
-        border-color: white;
-    }
 
     #navigation {
-        background-color: white;
-        border-radius: 5px;
-        text-align: center;
+        background-color: transparent;
     }
 
-    .dropdown-toggle {
-        color: white;
+    .dropdown-toggle {        
         font-size: 18px;
-        font-family: $Ubuntu;
-        font-weight: 500;
-        padding: 1rem 0;
+        color: white;
     }
 
-    .dropdown-toggle:hover {
-        color: white;
-        text-decoration: underline;
+    .dropdown-toggle img {
+        display: none;
+    }
+
+    .dropdown-toggle::after {
+        display: inline-block;
     }
 
     .dropdown-item:hover {
@@ -279,158 +169,24 @@ body {
     }
 
     #login-signup .nav-link {
-        text-decoration: none;
         color: white;
-        padding-inline: 2rem;
-        font-weight: 500;
     }
 
     #login-signup .signup .nav-link {
         color: $LightRed;
+        background: unset;
         background-color:white;
-        border-radius: 30px;
+        width: 100%;
     }
 
     #login-signup .signup:hover .nav-link{
         background-color: $VeryLightRed;
         color: white;
-    }
+    }   
+ 
  }
 
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    #nav {
-        background: url('images/bg-pattern-intro.svg'), linear-gradient(to right, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
-        background-repeat: no-repeat;
-        background-size: 175%;
-        background-position: -450px;
-        min-height: 70vh;
-        border-bottom-left-radius: 100px;
-    }
 
-    .navbar {
-        padding: 2.5rem 1.5rem;
-        font-family: $Ubuntu;
-    }
-
-    .navbar-toggler {
-        border: none;
-    }
-
-    .navbar-toggler:focus, .navbar-toggler:active {
-        border-color: white;
-    }
-
-    #navigation {
-        background-color: white;
-        border-radius: 5px;
-        text-align: center;
-    }
-
-    .dropdown-toggle {
-        color: white;
-        font-size: 18px;
-        font-family: $Ubuntu;
-        font-weight: 500;
-        padding: 1rem 0;
-    }
-
-    .dropdown-toggle:hover {
-        color: white;
-        text-decoration: underline;
-    }
-
-    .dropdown-item:hover {
-        background: none;
-        font-weight: 500;
-    }
-
-    #login-signup .nav-link {
-        text-decoration: none;
-        color: white;
-        padding-inline: 2rem;
-        font-weight: 500;
-    }
-
-    #login-signup .signup .nav-link {
-        color: $LightRed;
-        background-color:white;
-        border-radius: 30px;
-    }
-
-    #login-signup .signup:hover .nav-link{
-        background-color: $VeryLightRed;
-        color: white;
-    }
- }
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {  
-
-    #nav {
-        background: url('images/bg-pattern-intro.svg'), linear-gradient(to right, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
-        background-repeat: no-repeat;
-        background-size: 175%;
-        background-position: -450px;
-        min-height: 70vh;
-        border-bottom-left-radius: 100px;
-    }
-
-    .navbar {
-        padding: 2.5rem 1.5rem;
-        font-family: $Ubuntu;
-    }
-
-    .navbar-toggler {
-        border: none;
-    }
-
-    .navbar-toggler:focus, .navbar-toggler:active {
-        border-color: white;
-    }
-
-    #navigation {
-        background-color: white;
-        border-radius: 5px;
-        text-align: center;
-    }
-
-    .dropdown-toggle {
-        color: white;
-        font-size: 18px;
-        font-family: $Ubuntu;
-        font-weight: 500;
-        padding: 1rem 0;
-    }
-
-    .dropdown-toggle:hover {
-        color: white;
-        text-decoration: underline;
-    }
-
-    .dropdown-item:hover {
-        background: none;
-        font-weight: 500;
-    }
-
-    #login-signup .nav-link {
-        text-decoration: none;
-        color: white;
-        padding-inline: 2rem;
-        font-weight: 500;
-    }
-
-    #login-signup .signup .nav-link {
-        color: $LightRed;
-        background-color:white;
-        border-radius: 30px;
-    }
-
-    #login-signup .signup:hover .nav-link{
-        background-color: $VeryLightRed;
-        color: white;
-    }
-}
 /*
  _    _                
  | |  | |               
@@ -440,20 +196,212 @@ body {
  |_|  |_|\___|_|  \__ __/ 
                      
  */
+// X-Small devices (portrait phones, less than 576px)
+
+ #hero {
+    margin-top: 8rem;
+    color: white;
+    font-family: $Overpass;
+}
+
+#hero h2 {
+    font-size: 24px;
+    font-family: $Ubuntu;
+    font-weight: 400;
+}
+#hero .btn {
+    font-family: $Ubuntu;
+    font-weight: 400;
+}
+
+#hero .btn-light {
+    color: $LightRed;
+}
+
+#hero .cta-free:hover {
+    background-color: $VeryLightRed;
+    color: white;
+    border: none;
+}
+
+#hero .cta-learn:hover {
+    background-color: white;
+    color: $LightRed;
+}
+
+#hero .cta-learn, #hero .cta-free {
+    margin-bottom: 5rem;
+}
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {  }
+@media (min-width: 576px) { 
+    #hero {
+        margin-top: 8rem;
+        color: white;
+        font-family: $Overpass;
+    }
+    
+    #hero h2 {
+        font-size: 24px;
+        font-family: $Ubuntu;
+        font-weight: 400;
+    }
+    #hero .btn {
+        font-family: $Ubuntu;
+        font-weight: 400;
+    }
+    
+    #hero .btn-light {
+        color: $LightRed;
+    }
+    
+    #hero .cta-free:hover {
+        background-color: $VeryLightRed;
+        color: white;
+        border: none;
+    }
+    
+    #hero .cta-learn:hover {
+        background-color: white;
+        color: $LightRed;
+    }
+ }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {  }
+@media (min-width: 768px) { 
+    #hero {
+        margin-top: 8rem;
+        color: white;
+        font-family: $Overpass;
+    }
+    
+    #hero h2 {
+        font-size: 24px;
+        font-family: $Ubuntu;
+        font-weight: 400;
+    }
+    #hero .btn {
+        font-family: $Ubuntu;
+        font-weight: 400;
+    }
+    
+    #hero .btn-light {
+        color: $LightRed;
+    }
+    
+    #hero .cta-free:hover {
+        background-color: $VeryLightRed;
+        color: white;
+        border: none;
+    }
+    
+    #hero .cta-learn:hover {
+        background-color: white;
+        color: $LightRed;
+    }
+ }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {
+    #hero {
+        margin-top: 8rem;
+        color: white;
+        font-family: $Overpass;
+    }
+    
+    #hero h2 {
+        font-size: 24px;
+        font-family: $Ubuntu;
+        font-weight: 400;
+    }
+    #hero .btn {
+        font-family: $Ubuntu;
+        font-weight: 400;
+    }
+    
+    #hero .btn-light {
+        color: $LightRed;
+    }
+    
+    #hero .cta-free:hover {
+        background-color: $VeryLightRed;
+        color: white;
+        border: none;
+    }
+    
+    #hero .cta-learn:hover {
+        background-color: white;
+        color: $LightRed;
+    }
+  }
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) { 
+    #hero {
+        margin-top: 8rem;
+        color: white;
+        font-family: $Overpass;
+    }
+    
+    #hero h2 {
+        font-size: 24px;
+        font-family: $Ubuntu;
+        font-weight: 400;
+    }
+    #hero .btn {
+        font-family: $Ubuntu;
+        font-weight: 400;
+    }
+    
+    #hero .btn-light {
+        color: $LightRed;
+    }
+    
+    #hero .cta-free:hover {
+        background-color: $VeryLightRed;
+        color: white;
+        border: none;
+    }
+    
+    #hero .cta-learn:hover {
+        background-color: white;
+        color: $LightRed;
+    }
+}
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {  }
+@media (min-width: 1400px) { 
+    #hero {
+        margin-top: 8rem;
+        color: white;
+        font-family: $Overpass;
+    }
+    
+    #hero h2 {
+        font-size: 24px;
+        font-family: $Ubuntu;
+        font-weight: 400;
+    }
+    #hero .btn {
+        font-family: $Ubuntu;
+        font-weight: 400;
+    }
+    
+    #hero .btn-light {
+        color: $LightRed;
+    }
+    
+    #hero .cta-free:hover {
+        background-color: $VeryLightRed;
+        color: white;
+        border: none;
+    }
+    
+    #hero .cta-learn:hover {
+        background-color: white;
+        color: $LightRed;
+    }
+
+ }
 #hero {
     margin-top: 8rem;
     color: white;
@@ -493,7 +441,8 @@ body {
  |  _| | | | __| | | | '__/ _ \
  | | | |_| | |_| |_| | | |  __/
  |_|  \__,_|\__|\__,_|_|  \___|
-                              
+                // X-Small devices (portrait phones, less than 576px)
+              
  */// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {  }
 
@@ -546,7 +495,12 @@ body {
   \___ \| __/ _` | __/ _ \  / _ \|  _|   / /\ \ | '__| __|
   ____) | || (_| | ||  __/ | (_) | |    / ____ \| |  | |_ 
  |_____/ \__\__,_|\__\___|  \___/|_|   /_/    \_\_|   \__|
- */// Small devices (landscape phones, 576px and up)
+
+ 
+ */
+ // X-Small devices (portrait phones, less than 576px)
+
+ // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {  }
 
 // Medium devices (tablets, 768px and up)
@@ -601,6 +555,7 @@ body {
 */
 
 
+// X-Small devices (portrait phones, less than 576px)
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {  }
@@ -632,6 +587,8 @@ body {
 | | | (_) | (_) | ||  __/ |   
 |_|  \___/ \___/ \__\___|_|  
 */
+// X-Small devices (portrait phones, less than 576px)
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {  }
 
