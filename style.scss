@@ -73,7 +73,7 @@ body {
 }
 
 .dropdown-toggle:hover {
-    color: white;
+    color: $VeryDarkBlue;
     text-decoration: underline;
 }
 
@@ -155,12 +155,20 @@ body {
         color: white;
     }
 
+    .dropdown-toggle:hover {
+        color: white;
+    }
+
     .dropdown-toggle img {
         display: none;
     }
 
     .dropdown-toggle::after {
         display: inline-block;
+    }
+
+    .dropdown-menu {
+        background-color: white;
     }
 
     .dropdown-item:hover {
@@ -232,207 +240,6 @@ body {
 #hero .cta-learn, #hero .cta-free {
     margin-bottom: 5rem;
 }
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
-    #hero {
-        margin-top: 8rem;
-        color: white;
-        font-family: $Overpass;
-    }
-    
-    #hero h2 {
-        font-size: 24px;
-        font-family: $Ubuntu;
-        font-weight: 400;
-    }
-    #hero .btn {
-        font-family: $Ubuntu;
-        font-weight: 400;
-    }
-    
-    #hero .btn-light {
-        color: $LightRed;
-    }
-    
-    #hero .cta-free:hover {
-        background-color: $VeryLightRed;
-        color: white;
-        border: none;
-    }
-    
-    #hero .cta-learn:hover {
-        background-color: white;
-        color: $LightRed;
-    }
- }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
-    #hero {
-        margin-top: 8rem;
-        color: white;
-        font-family: $Overpass;
-    }
-    
-    #hero h2 {
-        font-size: 24px;
-        font-family: $Ubuntu;
-        font-weight: 400;
-    }
-    #hero .btn {
-        font-family: $Ubuntu;
-        font-weight: 400;
-    }
-    
-    #hero .btn-light {
-        color: $LightRed;
-    }
-    
-    #hero .cta-free:hover {
-        background-color: $VeryLightRed;
-        color: white;
-        border: none;
-    }
-    
-    #hero .cta-learn:hover {
-        background-color: white;
-        color: $LightRed;
-    }
- }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-    #hero {
-        margin-top: 8rem;
-        color: white;
-        font-family: $Overpass;
-    }
-    
-    #hero h2 {
-        font-size: 24px;
-        font-family: $Ubuntu;
-        font-weight: 400;
-    }
-    #hero .btn {
-        font-family: $Ubuntu;
-        font-weight: 400;
-    }
-    
-    #hero .btn-light {
-        color: $LightRed;
-    }
-    
-    #hero .cta-free:hover {
-        background-color: $VeryLightRed;
-        color: white;
-        border: none;
-    }
-    
-    #hero .cta-learn:hover {
-        background-color: white;
-        color: $LightRed;
-    }
-  }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-    #hero {
-        margin-top: 8rem;
-        color: white;
-        font-family: $Overpass;
-    }
-    
-    #hero h2 {
-        font-size: 24px;
-        font-family: $Ubuntu;
-        font-weight: 400;
-    }
-    #hero .btn {
-        font-family: $Ubuntu;
-        font-weight: 400;
-    }
-    
-    #hero .btn-light {
-        color: $LightRed;
-    }
-    
-    #hero .cta-free:hover {
-        background-color: $VeryLightRed;
-        color: white;
-        border: none;
-    }
-    
-    #hero .cta-learn:hover {
-        background-color: white;
-        color: $LightRed;
-    }
-}
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) { 
-    #hero {
-        margin-top: 8rem;
-        color: white;
-        font-family: $Overpass;
-    }
-    
-    #hero h2 {
-        font-size: 24px;
-        font-family: $Ubuntu;
-        font-weight: 400;
-    }
-    #hero .btn {
-        font-family: $Ubuntu;
-        font-weight: 400;
-    }
-    
-    #hero .btn-light {
-        color: $LightRed;
-    }
-    
-    #hero .cta-free:hover {
-        background-color: $VeryLightRed;
-        color: white;
-        border: none;
-    }
-    
-    #hero .cta-learn:hover {
-        background-color: white;
-        color: $LightRed;
-    }
-
- }
-#hero {
-    margin-top: 8rem;
-    color: white;
-    font-family: $Overpass;
-}
-
-#hero h2 {
-    font-size: 24px;
-    font-family: $Ubuntu;
-    font-weight: 400;
-}
-#hero .btn {
-    font-family: $Ubuntu;
-    font-weight: 400;
-}
-
-#hero .btn-light {
-    color: $LightRed;
-}
-
-#hero .cta-free:hover {
-    background-color: $VeryLightRed;
-    color: white;
-    border: none;
-}
-
-#hero .cta-learn:hover {
-    background-color: white;
-    color: $LightRed;
-}
-
 
 /*
    __       _                  
@@ -441,24 +248,10 @@ body {
  |  _| | | | __| | | | '__/ _ \
  | | | |_| | |_| |_| | | |  __/
  |_|  \__,_|\__|\__,_|_|  \___|
-                // X-Small devices (portrait phones, less than 576px)
-              
- */// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {  }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {  }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { }
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {  }
-
-#future row {
+ */
+ 
+// X-Small devices (portrait phones, less than 576px)
+ #future row {
     padding: 5rem;
 }
 
@@ -467,6 +260,39 @@ body {
     color:$VeryDarkBlue;
     font-family: $Overpass;
 }
+
+#future .feature {
+    margin-top: 3rem;
+}
+
+#future #future-img{
+    width: 100%;
+}
+
+#future .feature-text {
+    width: 80%;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+#future p {
+    color: $DarkGrayBlue;
+    font-family: $Ubuntu;
+    opacity: .8;
+}
+             
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    
+    #future .feature-text {
+        text-align: left;
+    }
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {  
+
 
 #future .feature {
     margin: 5rem 0 10rem 2rem;
@@ -482,12 +308,8 @@ body {
     margin-left: 5rem;
 }
 
-#future p {
-    color: $DarkGrayBlue;
-    font-family: $Ubuntu;
-    opacity: .8;
-}
 
+}
 
 /*    _____ _        _                __                 _   
   / ____| |      | |              / _|     /\        | |  
@@ -499,36 +321,23 @@ body {
  
  */
  // X-Small devices (portrait phones, less than 576px)
-
- // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {  }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {  }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { }
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {  }
-
-#art-state {
+ #art-state {
     background: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
     border-bottom-left-radius: 100px;
     border-top-right-radius: 100px;
-    height: 25rem;
+    height: 35rem;
+    margin-top: 5rem;
 }
 
-#art-state .phone-img {
+#art-state .phone-img { 
+    width: 100%;
     margin-top: -5rem;
 }
 
 #art-state .art-text {
     color: white;
-    padding: 5rem;
+    text-align: center;
+    width: 100%;
 
     h4 {
        color: white;
@@ -543,6 +352,59 @@ body {
 
 }
 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    #art-state {
+        height: 40rem;
+    }
+ }
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  
+
+    #art-state {
+        margin-top: 5rem;
+        height: 30rem;
+    }
+
+    #art-state .phone-img-container {
+        text-align: center;
+    }
+
+    #art-state .phone-img { 
+        width: 50%;        
+        margin-top: -5rem;
+    }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  
+    #art-state {
+    height: 20rem;
+    margin-top: 5rem;
+}
+
+#art-state .phone-img { 
+    width: 110%;
+    margin: -5rem auto;
+}
+#art-state .art-text {
+   align-self: center;
+    width: 50%;
+} }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+    #art-state {
+        height: 25rem;
+    }
+
+}
+
+
+
 /*
    _____ _                 _      
   / ____(_)               | |     
@@ -556,29 +418,32 @@ body {
 
 
 // X-Small devices (portrait phones, less than 576px)
+#simple {
+    margin-top: 10rem;
+}
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {  }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {  }
+#simple img {
+    width: 100%;    
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
+@media (min-width: 992px) { 
 
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { }
+    #simple .simple-text {
+        text-align: left;
+    }
+ }
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {  }
-#simple {
+@media (min-width: 1400px) { #simple {
     margin-top: 10rem;
 }
 
 #simple img {
     width: 175%;
     margin-left: -30rem;
-}
+} }
+
 
 /*______          _            
 |  ____|        | |           
@@ -589,27 +454,13 @@ body {
 */
 // X-Small devices (portrait phones, less than 576px)
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {  }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {  }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { }
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {  }
-
 footer {
     background-color: $DarkBlackBlue;
+    border-top-right-radius: 100px;
 }
 
 footer img {
-    margin-top: -10rem;
+    padding-top: 15rem;
 }
 
 footer p {
@@ -626,11 +477,12 @@ footer .nav-link:hover {
     color: white;
 }
 
-
-
-
-
-
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    footer img {
+        padding-top: 0;
+    }
+ }
 
 .attribution { 
     background-color: $DarkBlackBlue;

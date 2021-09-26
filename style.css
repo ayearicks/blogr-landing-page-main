@@ -56,7 +56,7 @@ body {
 }
 
 .dropdown-toggle:hover {
-  color: white;
+  color: #1f3f5b;
   text-decoration: underline;
 }
 
@@ -128,11 +128,17 @@ body {
     font-size: 18px;
     color: white;
   }
+  .dropdown-toggle:hover {
+    color: white;
+  }
   .dropdown-toggle img {
     display: none;
   }
   .dropdown-toggle::after {
     display: inline-block;
+  }
+  .dropdown-menu {
+    background-color: white;
   }
   .dropdown-item:hover {
     background: none;
@@ -198,183 +204,6 @@ body {
   margin-bottom: 5rem;
 }
 
-@media (min-width: 576px) {
-  #hero {
-    margin-top: 8rem;
-    color: white;
-    font-family: "Overpass", sans-serif;
-  }
-  #hero h2 {
-    font-size: 24px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-  }
-  #hero .btn {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-  }
-  #hero .btn-light {
-    color: #ff525d;
-  }
-  #hero .cta-free:hover {
-    background-color: #ff7a85;
-    color: white;
-    border: none;
-  }
-  #hero .cta-learn:hover {
-    background-color: white;
-    color: #ff525d;
-  }
-}
-
-@media (min-width: 768px) {
-  #hero {
-    margin-top: 8rem;
-    color: white;
-    font-family: "Overpass", sans-serif;
-  }
-  #hero h2 {
-    font-size: 24px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-  }
-  #hero .btn {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-  }
-  #hero .btn-light {
-    color: #ff525d;
-  }
-  #hero .cta-free:hover {
-    background-color: #ff7a85;
-    color: white;
-    border: none;
-  }
-  #hero .cta-learn:hover {
-    background-color: white;
-    color: #ff525d;
-  }
-}
-
-@media (min-width: 992px) {
-  #hero {
-    margin-top: 8rem;
-    color: white;
-    font-family: "Overpass", sans-serif;
-  }
-  #hero h2 {
-    font-size: 24px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-  }
-  #hero .btn {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-  }
-  #hero .btn-light {
-    color: #ff525d;
-  }
-  #hero .cta-free:hover {
-    background-color: #ff7a85;
-    color: white;
-    border: none;
-  }
-  #hero .cta-learn:hover {
-    background-color: white;
-    color: #ff525d;
-  }
-}
-
-@media (min-width: 1200px) {
-  #hero {
-    margin-top: 8rem;
-    color: white;
-    font-family: "Overpass", sans-serif;
-  }
-  #hero h2 {
-    font-size: 24px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-  }
-  #hero .btn {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-  }
-  #hero .btn-light {
-    color: #ff525d;
-  }
-  #hero .cta-free:hover {
-    background-color: #ff7a85;
-    color: white;
-    border: none;
-  }
-  #hero .cta-learn:hover {
-    background-color: white;
-    color: #ff525d;
-  }
-}
-
-@media (min-width: 1400px) {
-  #hero {
-    margin-top: 8rem;
-    color: white;
-    font-family: "Overpass", sans-serif;
-  }
-  #hero h2 {
-    font-size: 24px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-  }
-  #hero .btn {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-  }
-  #hero .btn-light {
-    color: #ff525d;
-  }
-  #hero .cta-free:hover {
-    background-color: #ff7a85;
-    color: white;
-    border: none;
-  }
-  #hero .cta-learn:hover {
-    background-color: white;
-    color: #ff525d;
-  }
-}
-
-#hero {
-  margin-top: 8rem;
-  color: white;
-  font-family: "Overpass", sans-serif;
-}
-
-#hero h2 {
-  font-size: 24px;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-}
-
-#hero .btn {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-}
-
-#hero .btn-light {
-  color: #ff525d;
-}
-
-#hero .cta-free:hover {
-  background-color: #ff7a85;
-  color: white;
-  border: none;
-}
-
-#hero .cta-learn:hover {
-  background-color: white;
-  color: #ff525d;
-}
-
 /*
    __       _                  
   / _|     | |                 
@@ -382,8 +211,6 @@ body {
  |  _| | | | __| | | | '__/ _ \
  | | | |_| | |_| |_| | | |  __/
  |_|  \__,_|\__|\__,_|_|  \___|
-                // X-Small devices (portrait phones, less than 576px)
-              
  */
 #future row {
   padding: 5rem;
@@ -396,23 +223,43 @@ body {
 }
 
 #future .feature {
-  margin: 5rem 0 10rem 2rem;
+  margin-top: 3rem;
 }
 
 #future #future-img {
-  margin: 0 auto;
-  width: 125%;
+  width: 100%;
 }
 
 #future .feature-text {
   width: 80%;
-  margin-left: 5rem;
+  text-align: center;
+  margin: 2rem auto;
 }
 
 #future p {
   color: #4b5862;
   font-family: "Ubuntu", sans-serif;
   opacity: .8;
+}
+
+@media (min-width: 992px) {
+  #future .feature-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1400px) {
+  #future .feature {
+    margin: 5rem 0 10rem 2rem;
+  }
+  #future #future-img {
+    margin: 0 auto;
+    width: 125%;
+  }
+  #future .feature-text {
+    width: 80%;
+    margin-left: 5rem;
+  }
 }
 
 /*    _____ _        _                __                 _   
@@ -429,16 +276,19 @@ body {
   background: linear-gradient(to right, #2c2d3f, #3f4164);
   border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;
-  height: 25rem;
+  height: 35rem;
+  margin-top: 5rem;
 }
 
 #art-state .phone-img {
+  width: 100%;
   margin-top: -5rem;
 }
 
 #art-state .art-text {
   color: white;
-  padding: 5rem;
+  text-align: center;
+  width: 100%;
 }
 
 #art-state .art-text h4 {
@@ -450,6 +300,49 @@ body {
 #art-state .art-text p {
   font-family: "Ubuntu", sans-serif;
   opacity: .8;
+}
+
+@media (min-width: 576px) {
+  #art-state {
+    height: 40rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #art-state {
+    margin-top: 5rem;
+    height: 30rem;
+  }
+  #art-state .phone-img-container {
+    text-align: center;
+  }
+  #art-state .phone-img {
+    width: 50%;
+    margin-top: -5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #art-state {
+    height: 20rem;
+    margin-top: 5rem;
+  }
+  #art-state .phone-img {
+    width: 110%;
+    margin: -5rem auto;
+  }
+  #art-state .art-text {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #art-state {
+    height: 25rem;
+  }
 }
 
 /*
@@ -467,8 +360,23 @@ body {
 }
 
 #simple img {
-  width: 175%;
-  margin-left: -30rem;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  #simple .simple-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1400px) {
+  #simple {
+    margin-top: 10rem;
+  }
+  #simple img {
+    width: 175%;
+    margin-left: -30rem;
+  }
 }
 
 /*______          _            
@@ -480,10 +388,11 @@ body {
 */
 footer {
   background-color: #25252d;
+  border-top-right-radius: 100px;
 }
 
 footer img {
-  margin-top: -10rem;
+  padding-top: 15rem;
 }
 
 footer p {
@@ -498,6 +407,12 @@ footer .nav-link {
 footer .nav-link:hover {
   text-decoration: underline;
   color: white;
+}
+
+@media (min-width: 992px) {
+  footer img {
+    padding-top: 0;
+  }
 }
 
 .attribution {
